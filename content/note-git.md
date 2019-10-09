@@ -1,10 +1,10 @@
-Title: My first post
+Title: Справочник по Git
 Date: 2019-08-17 10:01
 Modified: 2019-08-17 10:01
-Category: post
-Tags: post
-Slug: My-first-post
+Category: Записки
+Tags: Записки
+Slug: My-note
 Authors: Sam
 Summary: What does your post talk about? Write here.
 
-This is the *first post* from my Pelican blog. **YAY!**
+Записки Git

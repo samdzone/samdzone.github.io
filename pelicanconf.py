@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Sam'
 SITENAME = 'SamCookbook'
-SITEURL = ''
+SITEURL = '/'
 
 PATH = 'content'
 
@@ -26,10 +26,23 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
          ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (('github', 'https://github.com/samdzone'),
+          ('telegram', 'tg://resolve?domain=S7ion')
+          )
+
 
 DEFAULT_PAGINATION = 10
 
+DISPLAY_PAGES_ON_MENU = True
+
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
+THEME = 'pelican-blue'
+
+TEMPLATE_PAGES = {'about.html': 'about.html'}
+
+MENUITEMS = (('Блог', SITEURL), ('О себе', '/about/'))
+
+SIDEBAR_DIGEST = 'Программирование и системное администрирование'
+
