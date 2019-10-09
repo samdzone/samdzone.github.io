@@ -38,7 +38,7 @@ DISPLAY_PAGES_ON_MENU = True
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
-THEME = 'pelican-blue'
+THEME = 'theme'
 
 TEMPLATE_PAGES = {'about.html': 'about.html'}
 
