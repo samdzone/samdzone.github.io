@@ -56,9 +56,9 @@
                 <li><a class="nav__link" href="/about/">О себе</a></li>
                 <li id="categories"><a class="nav__link">Категории</a>
                 <ul class="submenu">
-                        <li class="nav__link "><a
+                        <li class=""><a class="nav__link"
                                 href="/category/stati.html">Статьи</a></li>
-                        <li class="nav__link "><a
+                        <li class=""><a class="nav__link"
                                 href="/category/zapiski.html">Записки</a></li>
                 </ul>
                 </li>
@@ -102,12 +102,12 @@
                         My first post</a>
                     </h2>
 
-                    <p class="post_date">сб 17 августа 2019</p>
+                    <p class="post_date">Сб 17 августа 2019</p>
                     <a href="/author/sam.html">@Sam</a>
                     <span> in </span>
                     <span class="post_category"><a href="/category/stati.html" rel="bookmark"
                                                    title="Permalink to Статьи">[ Статьи ]</a></span>
-                    <span class="post_date">сб 17 августа 2019</span>
+                    <span class="post_date">Сб 17 августа 2019</span>
                 </li>
                 <li class="post_list"><p class="post_entry">
                     <!--<a href="/My-note.html" rel="bookmark" title="Permalink to Справочник по Git">-->
@@ -118,12 +118,12 @@
                         Справочник по Git</a>
                     </h2>
 
-                    <p class="post_date">сб 17 августа 2019</p>
+                    <p class="post_date">Сб 17 августа 2019</p>
                     <a href="/author/sam.html">@Sam</a>
                     <span> in </span>
                     <span class="post_category"><a href="/category/zapiski.html" rel="bookmark"
                                                    title="Permalink to Записки">[ Записки ]</a></span>
-                    <span class="post_date">сб 17 августа 2019</span>
+                    <span class="post_date">Сб 17 августа 2019</span>
                 </li>
         </ol>
 
@@ -144,6 +144,7 @@
     <script>
 
         document.getElementById('categories').onclick = function() {
+            //this.classList.toggle("open");
             this.querySelector('.submenu').classList.toggle("open");
         };
 

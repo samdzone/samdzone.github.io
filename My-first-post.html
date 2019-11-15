@@ -56,9 +56,9 @@
                 <li><a class="nav__link" href="/about/">О себе</a></li>
                 <li id="categories"><a class="nav__link">Категории</a>
                 <ul class="submenu">
-                        <li class="nav__link  active"><a
+                        <li class=" active"><a class="nav__link"
                                 href="/category/stati.html">Статьи</a></li>
-                        <li class="nav__link "><a
+                        <li class=""><a class="nav__link"
                                 href="/category/zapiski.html">Записки</a></li>
                 </ul>
                 </li>
@@ -104,7 +104,7 @@
                 <span> in </span>
                 <span class="post_category"><a href="/category/stati.html" rel="bookmark"
                                                title="Permalink to Статьи">[ Статьи ]</a></span>
-                <span class="post_date">сб 17 августа 2019</span>
+                <span class="post_date">Сб 17 августа 2019</span>
                 <div><span>Tags : </span>
                             <span><a href="/tag/stati.html">#Статьи, </a></span>
                 </div>
@@ -157,6 +157,7 @@
     <script>
 
         document.getElementById('categories').onclick = function() {
+            //this.classList.toggle("open");
             this.querySelector('.submenu').classList.toggle("open");
         };
 
