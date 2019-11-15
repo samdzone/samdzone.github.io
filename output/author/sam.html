@@ -64,9 +64,9 @@
                 <li><a class="nav__link" href="/about/">О себе</a></li>
                 <li id="categories"><a class="nav__link">Категории</a>
                 <ul class="submenu">
-                        <li class="nav__link "><a
+                        <li class=""><a class="nav__link"
                                 href="/category/stati.html">Статьи</a></li>
-                        <li class="nav__link "><a
+                        <li class=""><a class="nav__link"
                                 href="/category/zapiski.html">Записки</a></li>
                 </ul>
                 </li>
@@ -139,6 +139,7 @@
     <script>
 
         document.getElementById('categories').onclick = function() {
+            //this.classList.toggle("open");
             this.querySelector('.submenu').classList.toggle("open");
         };
 

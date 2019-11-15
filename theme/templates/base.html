@@ -82,7 +82,7 @@
                 <li id="categories"><a class="nav__link">Категории</a>
                 <ul class="submenu">
                     {% for cat, null in categories %}
-                        <li class="nav__link {% if cat == category %} active{% endif %}"><a
+                        <li class="{% if cat == category %} active{% endif %}"><a class="nav__link"
                                 href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
                     {% endfor %}
                 </ul>
@@ -165,6 +165,7 @@
     <script>
 
         document.getElementById('categories').onclick = function() {
+            //this.classList.toggle("open");
             this.querySelector('.submenu').classList.toggle("open");
         };
 

@@ -96,8 +96,7 @@ article > header {
   border-radius: 5px 5px;
 }
 
-
-/* Links */;
+/* Links */
 a  { color:#1DAEDF; text-decoration:none; }
 a:visited { color:#1DAEDF; text-decoration:none; }
 a:link { color:#1DAEDF; text-decoration:none; }
@@ -199,18 +198,23 @@ aside > h2 {
   padding: 0.77273rem 0;
   border-bottom: 1px solid #328cc7;
 }
+
 .submenu {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: none;
+  height: 0;
+  visibility: hidden;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.2s ease-in-out;
 }
 .submenu.open {
-  display: block;
+  transform: scaleY(1);
+  visibility: visible;
+  height: auto;
+
 }
-
-
-
 .blog_roll_link 
 {
   display: block;
