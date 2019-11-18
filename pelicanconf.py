@@ -44,5 +44,5 @@ TEMPLATE_PAGES = {'about.html': 'about.html'}
 
 MENUITEMS = (('Блог', SITEURL), ('О себе', '/about/'))
 
-SIDEBAR_DIGEST = 'Программирование и системное администрирование'
+SIDEBAR_DIGEST = 'Блог о программировании и системном администрировании'
 
