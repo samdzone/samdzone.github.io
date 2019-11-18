@@ -16,6 +16,8 @@
         <meta itemprop="description" content="">
 
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+        <link href='/theme/fontawesome/css/all.min.css' rel='stylesheet' type='text/css'>
+
         <!-- Style Meta Data -->
         <link rel="stylesheet" href="/theme/css/style.css" type="text/css"/>
         <link rel="stylesheet" href="/theme/css/pygments.css" type="text/css"/>
@@ -43,9 +45,12 @@
 <body>
 <!-- Sidebar -->
 <aside>
+    <div class="mobile-header">
+        <i class="fas fa-bars mobile-menu-btn" title="Меню"></i>
+    </div>
     <!--<center><a href=""><img id="avatar" src=""></a></center>-->
-    <h1>SamCookbook</h1>
-        <p>Программирование и системное администрирование</p>
+    <!--    <h1>SamCookbook</h1>-->
+        <p>Блог о программировании и системном администрировании</p>
     <br>
 
 
@@ -88,9 +93,12 @@
         </ul>
 
 </aside>
-
-<!-- Content -->
-<article>
+<div class="main-wrap">
+    <header>
+        <i class="fas fa-bars menu-btn" title="Меню"></i>
+    </header>
+    <!-- Content -->
+    <article>
     <section id="content">
         <article>
             <h2 class="post_title post_detail"><a href="/My-note.html" rel="bookmark"
@@ -141,26 +149,34 @@
             </div>
         </article>
     </section>
-</article>
+    </article>
 
-<!-- Footer -->
-    <footer>
-        <p>
-            Blog powered by <a href="http://getpelican.com/">Pelican</a>,
-            which takes great advantage of <a href="http://python.org">Python</a>.
-            Theme <a href="https://github.com/parbhat/pelican-blue">Pelican-Blue</a> by <a
-                href="https://parbhatpuri.com/">@parbhat</a>.
-        </p>
-    </footer>
+    <!-- Footer -->
+        <footer>
+            <p>
+                Blog powered by <a href="http://getpelican.com/">Pelican</a>.
+                Author <a href="mailto://semen.dze@gmail.com">@Sam</a>.
+            </p>
+        </footer>
+</div>
+
 
 
     <script>
 
         document.getElementById('categories').onclick = function() {
-            //this.classList.toggle("open");
             this.querySelector('.submenu').classList.toggle("open");
         };
-
+        document.querySelector('.menu-btn').onclick = function() {
+            document.getElementsByTagName('aside')[0].classList.toggle("open");
+            document.querySelector('.main-wrap').classList.toggle("open-menu");
+           // document.getElementsByTagName('body')[0].classList.toggle("open-menu");
+        };
+        document.querySelector('.mobile-menu-btn').onclick = function() {
+            document.getElementsByTagName('aside')[0].classList.toggle("open");
+            document.querySelector('.main-wrap').classList.toggle("open-menu");
+           // document.getElementsByTagName('body')[0].classList.toggle("open-menu");
+        };
 
     </script>
 
