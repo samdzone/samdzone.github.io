@@ -58,7 +58,13 @@ article section .blog-post
 /* Header */
 header {
   display: block;
-  margin: 40px 0 0 100px;
+  margin: 30px 0 0 100px;
+  height: 50px;
+  vertical-align: middle;
+  line-height: 50px;
+}
+header > div {
+  display: inline-block;
 }
 /* Body */
 body {margin: 0}
@@ -90,7 +96,12 @@ article ol.posts
   transform: translateX(220px);
   width: calc(100% - 220px);
 }
-
+.logo {
+  margin-left: 40px;
+  text-align: center;
+  font-size: 28px;
+  font-family: Montserrat;
+}
 /* Articles */
 
 p.post_entry {  
@@ -187,8 +198,11 @@ aside > h2 {
 
 .social
 {
+  width: 150px;
   display: inline-block;
   margin-top: 40px;
+  padding: 0.33147rem 0;
+  border-bottom: 2px solid #328cc7;
 }
 
 .nav
@@ -247,7 +261,7 @@ aside > h2 {
   height: auto;
 
 }
-.blog_roll_link 
+.blog_roll_link
 {
   display: block;
   padding: 0.33147rem 0;
@@ -274,6 +288,9 @@ aside > h2 {
   }
   .mobile-menu-btn:hover {
     color: #dcdcdc;
+  }
+  .mobile-header > div {
+    display: inline-block;
   }
   header {
     display: none;
