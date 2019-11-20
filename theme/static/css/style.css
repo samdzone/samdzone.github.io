@@ -203,6 +203,7 @@ aside > h2 {
   margin-top: 40px;
   padding: 0.33147rem 0;
   border-bottom: 2px solid #328cc7;
+
 }
 
 .nav
@@ -249,17 +250,16 @@ aside > h2 {
   list-style: none;
   padding: 0;
   margin: 0;
-  height: 0;
+  max-height: 0;
   visibility: hidden;
   transform: scaleY(0);
   transform-origin: top;
-  transition: transform 0.2s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 .submenu.open {
+  max-height: 700px;
   transform: scaleY(1);
   visibility: visible;
-  height: auto;
-
 }
 .blog_roll_link
 {
